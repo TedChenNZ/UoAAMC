@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Ted Chen">
+    <link rel="shortcut icon" href="assets/ico/favicon.ico">
+
+   
+    <title>UoA Anime Manga Club</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans' rel='stylesheet' type='text/css'>
+
+    <link href="assets/css/magnific.css" rel="stylesheet">
+
+
+    <!-- Just for debugging purposes. Don't actually copy this line! -->
+    <!--[if lt IE 9]><script src="js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- ==================== -->
+    <!-- Fixed navbar -->
+    <!-- ==================== -->
+    <div class="navbar navbar-black navbar-fixed-top" role="navigation">
+      <div class="container">
+        <div class="navbar-header">
+          <!-- Mobile Nav Button -->
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <!-- Title -->
+          <a class="navbar-logo" href="#"><img src="assets/img/logo-100.png" /></a>
+          <a class="navbar-brand" href="index.html">UoA Anime & Manga Club</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="newsevents.html">News and Events</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li class="active"><a href="gallery.html">Gallery</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <!-- ==================== -->
+    <!-- Content -->
+    <!-- ==================== -->
+
+    <!-- Main component for a primary marketing message or call to action -->
+    <div class="content">
+      <div class="container">
+        <div class="row">
+          <!-- Main Content -->
+          <div class="col-xs-12 col-sm-6 col-md-8" >
+            <h1>Gallery</h1>
+
+            <div class="popup-gallery">
+              <a href="assets/img/gallery/SatouSanChuanColoured.png" title="Satou-san - The Club Mascot"><img src="assets/img/gallery/SatouSanChuanColoured.png" width="75" height="75"></a>
+              <a href="assets/img/gallery/MisakaPosterSmall.png" title=""><img src="assets/img/gallery/MisakaPosterSmall.png" width="75" height="75"></a>
+              <a href="assets/img/gallery/Poster 1 v2.png" title=""><img src="assets/img/gallery/Poster 1 v2.png" width="75" height="75"></a>
+              <a href="assets/img/gallery/Poster 2.png" title=""><img src="assets/img/gallery/Poster 2.png" width="75" height="75"></a>
+              <a href="assets/img/gallery/POSTER 3 v3.png" title=""><img src="assets/img/gallery/POSTER 3 v3.png" width="75" height="75"></a>
+              <a href="assets/img/gallery/Poster 5.png" title=""><img src="assets/img/gallery/Poster 5.png" width="75" height="75"></a>
+              <!-- a href="assets/img/gallery/" title=""><img src="assets/img/gallery/" width="75" height="75"></a> -->
+            </div>
+          </div>
+          <!-- Side Content -->
+          <div class="col-xs-6 col-md-4">
+            <h3>Upcoming Events</h3>
+            <ul>
+              <li>O-Week
+                <ul>
+                  <li>3 March - 14 March</li>
+                </ul>
+              </li>
+              <li>Anime Screening
+                <ul>
+                  <li>13 March</li>
+                  <li>14 March</li>
+                </ul>
+              </li>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ==================== -->
+    <!-- Footer -->
+    <!-- ==================== -->
+    <footer>
+      <p class="text-muted">
+        Copyright University of Auckland Anime and Manga Club 2014
+      </p>
+    </footer>
+    
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/magnific.min.js"></script>
+    <script type="text/javascript">
+    $(document).ready(function() {
+      $('.popup-gallery').magnificPopup({
+        delegate: 'a',
+        type: 'image',
+        tLoading: 'Loading image #%curr%...',
+        mainClass: 'mfp-img-mobile',
+        gallery: {
+          enabled: true,
+          navigateByImgClick: true,
+          preload: [0,1] // Will preload 0 - before current, and 1 after the current image
+        },
+        image: {
+          tError: '<a href="%url%">The image #%curr%</a> could not be loaded.',
+          titleSrc: function(item) {
+            return item.el.attr('title') + '<small></small>';
+          }
+        }
+      });
+    });
+    </script>
+  </body>
+</html>

@@ -11,8 +11,11 @@ $nav-bg-color: rgba(0,0,0,0.75);
 
 .navbar-logo {
     float: left;
+    margin: 5px;  
+}
+
+.navbar-logo img {
     width: 40px;
-    margin: 5px;   
 }
 
 .navbar-black {
@@ -28,17 +31,81 @@ $nav-bg-color: rgba(0,0,0,0.75);
         color: white;
     }
     .navbar-toggle {
-        border-color: #333;   
+        border-color: #DDD; 
+        background-color: #DDD;  
     }
-    .navbar-toggle:focus {
-        background-color: #222;
+
+    .navbar-toggle:focus, .navbar-toggle:hover {
+        background-color: #DDD;
     }
+
+    .navbar-toggle .icon-bar {
+        background-color: #888;
+    }
+
+    .navbar-collapse, .navbar-form {
+        border-color: #e7e7e7;
+    }
+
+    // .navbar-nav>.open>a, .navbar-nav>.open>a:hover, .navbar-nav>.open>a:focus{
+    //     background-color: #e7e7e7;
+    //     color: #555;
+    // }
+
 }
 
 .nav > li > a:hover,a:focus {
     background-color: $nav-bg-color-backup;
     background-color: $nav-bg-color;
     color: #ccc;
+}
+
+// @media all and (max-width: 1000px) and (min-width: 768px) {
+//     .navbar-nav {
+//         width: 100%;
+//     }
+
+//     .container .navbar-header {
+//         width: 100%;
+//         margin-left: auto;
+//         margin-right: auto;
+//         text-align: center;
+        
+//     }
+
+//     .navbar-logo {
+//         float: none;
+//     }
+//     .navbar-brand {
+//         float: none;
+//     }
+// }
+
+
+@media all and (max-width: 800px) {
+    .navbar-nav {
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+}
+
+@media all and (max-width: 380px) {
+    .navbar-brand {
+        display: none;
+    }
+    .navbar-logo {
+        width: 100%;
+        background: transparent;
+        text-align: center;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .navbar-toggle {
+        z-index: 10;
+        position: relative;
+    }
+
 }
 
 /* Homepage */
@@ -146,7 +213,7 @@ html {
 
 body {
   /* Margin bottom by footer height */
-  // margin-bottom: 60px;
+  margin-bottom: 60px;
 }
 
 footer {
