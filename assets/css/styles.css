@@ -34,9 +34,10 @@ body {
   position: relative;
   display: block;
   text-align: center;
-  padding-top: 70px;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-repeat: no-repeat;
+  background-color: white;
+  background-position: center; }
   .home-slide img {
     width: 100px; }
   .home-slide h1 {
@@ -56,25 +57,43 @@ body {
 
 .home-first {
   color: white;
-  padding-top: 100px; }
+  padding-top: 130px;
+  min-height: 500px; }
   .home-first .darken {
-    margin-top: -100px; }
+    margin-top: -130px; }
   .home-first .container {
     z-index: 10;
     width: 100%;
     position: relative; }
   .home-first h1 {
     text-transform: uppercase;
-    text-align: center;
-    font-family: 'Open Sans', sans-serif;
-    font-size: 40px; }
+    text-align: center; }
   .home-first h3 {
     text-transform: uppercase;
     text-align: center;
     font-family: 'Open Sans Condensed', sans-serif; }
 
-.home-final h1 {
-  text-align: center; }
+.home-final {
+  padding-top: 70px; }
+  .home-final h1 {
+    text-align: center; }
+
+.home-text {
+  z-index: 20;
+  min-height: 400px;
+  background: white; }
+
+.home-text .container {
+  padding-top: 70px; }
+
+.home-image {
+  z-index: 10;
+  margin-top: -100px;
+  min-height: 500px; }
+
+/* Other stuff */
+.content {
+  padding-top: 70px; }
 
 /* Footer */
 /* Sticky footer styles
@@ -84,8 +103,7 @@ html {
   min-height: 100%; }
 
 body {
-  /* Margin bottom by footer height */
-  margin-bottom: 60px; }
+  /* Margin bottom by footer height */ }
 
 footer {
   position: absolute;

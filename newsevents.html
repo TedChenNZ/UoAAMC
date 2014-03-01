@@ -44,13 +44,13 @@
             <span class="icon-bar"></span>
           </button>
           <!-- Title -->
-          <a href="#"><img class="navbar-logo" src="assets/img/logo-100.png" /></a>
-          <a class="navbar-brand" href="#">UoA Anime & Manga Club</a>
+          <a href="index.html"><img class="navbar-logo" src="assets/img/logo-100.png" /></a>
+          <a class="navbar-brand" href="index.html">UoA Anime & Manga Club</a>
         </div>
         <div class="navbar-collapse collapse">
           <ul class="nav navbar-nav navbar-right">
-            <li class="active"><a href="index.html">Home</a></li>
-            <li><a href="newsevents.html">News and Events</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li class="active"><a href="newsevents.html">News and Events</a></li>
             <li><a href="projects.html">Projects</a></li>
           </ul>
         </div><!--/.nav-collapse -->
@@ -62,65 +62,34 @@
     <!-- ==================== -->
 
     <!-- Main component for a primary marketing message or call to action -->
-
-
-    <div class="home-slide home-first"  style="background-image: url('assets/img/haruhi.jpg')" 
-      data-center="background-position: 50% 0px;" 
-      data-top-bottom="background-position: 50% -100px;" >
-
-      <span class="darken"></span>
-      <div class="container" data-0="opacity:1;top:3%;" data-100="opacity:0;top:-10%;">
-        <h3>University of Auckland</h3>
-        <h1>Anime & Manga <br />Club</h1>
-      </div> <!-- /container -->
-
-    </div>
-
-
-
-    <div class="home-slide home-text">
+    <div class="content">
       <div class="container">
         <div class="row">
+          <!-- Main Content -->
           <div class="col-xs-12 col-sm-6 col-md-8" >
-            <h1>Anime Screenings</h2>
-            <p>Hang out with fellow club members and watch anime together, twice a week!</p>
+            <h1>O-Week</h1>
+            <h5 class="text-muted">Posted 1 March 2014</h5>
+            <p>We have a stall! Visit us! Sign up!</p>
           </div>
-          <div class="col-xs-6 col-md-4" class="center">
-            <img src="assets/img/film_reel02.png" />
+          <!-- Side Content -->
+          <div class="col-xs-6 col-md-4">
+            <h3>Upcoming Events</h3>
+            <ul>
+              <li>O-Week
+                <ul>
+                  <li>3 March - 14 March</li>
+                </ul>
+              </li>
+              <li>Anime Screening
+                <ul>
+                  <li>13 March</li>
+                  <li>14 March</li>
+                </ul>
+              </li>
+            </ul>
+
           </div>
         </div>
-      </div>
-    </div>
-
-    <div class="home-slide home-image" style="background-image: url('assets/img/titan.jpg');"
-      data-center="background-position: 100% 0px;" data-top-bottom="background-position: 50% -100px;" data-bottom-top="background-position: 50% 100px;"  >
-    </div>
-
-    <div class="home-slide home-text">
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-6 col-md-4" class="center">
-            <img src="assets/img/microphone.png" />
-          </div>
-
-          <div class="col-xs-12 col-sm-6 col-md-8">
-            <h1>Fun Games and Events</h2>
-            <p>Quizes, Karaoke Events, Manga Meet Ups and More!</p>
-          </div>
-          
-        </div>
-      </div>
-    </div>
-
-
-    <div class="home-slide" style="background-image: url('assets/img/miku.jpg')"
-    data-center="background-position: 50% 0px;" 
-    data-top-bottom="background-position: 50% -100px;">
-    </div>
-    
-    <div class="home-slide home-final">
-      <div class="container">
-        <h1>Join Today!</h1>
       </div>
     </div>
 
@@ -140,28 +109,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
-
-    
-    <script src="assets/js/skrollr.min.js"></script>
-    <!--<script type="text/javascript">
-             window.onload = function() {
-                    skrollr.init({
-                    forceHeight: false,
-            });
-
-            }
-    </script>-->
-    <script type="text/javascript">
-    window.onload = ( function( $ ) {
-        // Init Skrollr
-        var s = skrollr.init({
-            render: function(data) {
-                //Debugging - Log the current scroll position.
-                console.log(data.curTop);
-            }
-        });
-    } )( jQuery );
-    </script>
 
   </body>
 </html>
