@@ -62,7 +62,8 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-color: white;
-  background-position: center; }
+  background-position: center;
+  padding-bottom: 100px; }
   .home-slide img {
     width: 100px; }
   .home-slide h1 {
@@ -99,7 +100,7 @@ body {
     font-family: 'Open Sans Condensed', sans-serif; }
 
 .home-final {
-  padding-top: 70px; }
+  padding-top: 150px; }
   .home-final h1 {
     text-align: center; }
 
@@ -109,12 +110,25 @@ body {
   background: white; }
 
 .home-text .container {
-  padding-top: 70px; }
+  padding-top: 100px; }
 
 .home-image {
   z-index: 10;
   margin-top: -100px;
   min-height: 500px; }
+
+.flat-button {
+  border: solid 1px #428bca;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  font-size: 64px;
+  padding: 10px 20px; }
+
+.flat-button:hover, .flat-button:active {
+  color: white;
+  text-decoration: none;
+  background: #428bca; }
 
 /* Other stuff */
 .content {

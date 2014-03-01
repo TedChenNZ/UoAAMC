@@ -120,7 +120,7 @@ $nav-bg-color: rgba(0,0,0,0.75);
     background-repeat: no-repeat;
     background-color: white;
     background-position: center;
-    
+    padding-bottom: 100px;
     img {
         width: 100px;
     }
@@ -177,7 +177,7 @@ $nav-bg-color: rgba(0,0,0,0.75);
     h1 {
         text-align: center;
     }
-    padding-top: 70px;
+    padding-top: 150px;
 }
 
 .home-text {
@@ -187,7 +187,7 @@ $nav-bg-color: rgba(0,0,0,0.75);
 }
 
 .home-text .container {
-    padding-top: 70px;
+    padding-top: 100px;
 }
 
 .home-image {
@@ -195,6 +195,23 @@ $nav-bg-color: rgba(0,0,0,0.75);
     margin-top: -100px;
     min-height: 500px;
 }
+
+.flat-button {
+    border: solid 1px #428bca;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    border-radius: 20px;
+    font-size: 64px;
+    padding: 10px 20px;
+}
+
+.flat-button:hover, .flat-button:active{
+    color: white;
+    // border-color: #2A6496;
+    text-decoration: none;
+    background: #428bca;
+}
+
 
 /* Other stuff */
 .content {
