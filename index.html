@@ -156,14 +156,32 @@
             }
     </script>-->
     <script type="text/javascript">
+    
+
+    function detectmob() {
+       if(window.innerWidth <= 800 && window.innerHeight <= 600) {
+         return true;
+       } else {
+         return false;
+       }
+    }
+
     window.onload = ( function( $ ) {
+      var is_chrome = navigator.userAgent.indexOf('Chrome') > -1;
+      var is_explorer = navigator.userAgent.indexOf('MSIE') > -1;
+      var is_firefox = navigator.userAgent.indexOf('Firefox') > -1;
+      var is_safari = navigator.userAgent.indexOf("Safari") > -1;
+      var is_Opera = navigator.userAgent.indexOf("Presto") > -1;
+      if ((is_chrome)&&(is_safari)) {is_safari=false;}
+
         // Init Skrollr
+        if (!detectmob() && (!is_safari)){
         var s = skrollr.init({
             render: function(data) {
                 //Debugging - Log the current scroll position.
                 console.log(data.curTop);
             }
-        });
+        });}
     } )( jQuery );
     </script>
 
