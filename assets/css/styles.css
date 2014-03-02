@@ -1,3 +1,4 @@
+/* Mixins */
 /* Body */
 body {
   font-family: 'Open Sans', sans-serif;
@@ -72,6 +73,19 @@ body {
   .home-slide p {
     text-align: left;
     font-size: 18px; }
+  .home-slide a {
+    color: #2E2F33;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
+  .home-slide a:hover, .home-slide a:focus {
+    color: #428bca;
+    text-decoration: none;
+    -webkit-transition: all 500ms ease;
+    -moz-transition: all 500ms ease;
+    -o-transition: all 500ms ease;
+    transition: all 500ms ease; }
 
 .darken {
   width: 100%;
@@ -117,13 +131,13 @@ body {
   margin-top: -100px;
   min-height: 500px; }
 
-.flat-button {
+.home-slide .flat-button {
   border: solid 1px #428bca;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
-  font-size: 64px;
-  padding: 10px 20px 20px 20px;
+  font-size: 36px;
+  padding: 10px 20px 15px 20px;
   white-space: nowrap;
   overflow: auto;
   color: white;
@@ -133,7 +147,7 @@ body {
   -o-transition: all 500ms ease;
   transition: all 500ms ease; }
 
-.flat-button:hover, .flat-button:active {
+.home-slide .flat-button:hover, .home-slide .flat-button:active {
   text-decoration: none;
   color: #428bca;
   background: white;
@@ -150,9 +164,19 @@ body {
   .flat-button {
     font-size: 24px;
     padding-bottom: 12px; } }
+.home-icon {
+  margin-top: 20px;
+  text-align: center; }
+
+@media all and (max-width: 1000px) {
+  .home-icon {
+    text-align: left; } }
 /* Other stuff */
 .content {
   padding-top: 70px; }
+
+.center {
+  text-align: center; }
 
 /* Footer */
 /* Sticky footer styles
